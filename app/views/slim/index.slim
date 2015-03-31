@@ -22,17 +22,164 @@
           p 一般而言，若綁約24個月，其實在兩年內你都得付給電信公司大約3萬以上的費用，實還真不少是吧！
           p 
             a.btn.btn-info.btn-sm 精簡速算 
-
+    /! Indicators
     ol.carousel-indicators
-      li.active data-slide-to="0"
-      li data-slide-to="1"
-      li data-slide-to="2"
+      li.active data-target="#myCarousel" data-slide-to="0"
+      li data-target="#myCarousel" data-slide-to="1"
+      li data-target="#myCarousel" data-slide-to="2"
 
+    /! Controls
     .carousel-controls
-      a.carousel-control.left href="#myCrousel" data-slide="prev"
+      a.carousel-control.left href="#myCarousel" data-slide="prev"
         span.glyphicon.glyphicon-chevron-left
-      a.carousel-control.right href="#myCrousel" data-slide="next"
+      a.carousel-control.right href="#myCarousel" data-slide="next"
         span.glyphicon.glyphicon-chevron-right
+.container
+  #headbox
+    .row.naviposition
+      nav.navbar.navbar-default role="navigation"
+        .container-fluid
+          .navbar-header
+            a.navbar-brand
+              img src="/img/iword-s.png" /
+
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.dropdown
+                a.dropdown-toggle href="#" data-toggle="dropdown" role="button" aria-expanded="false" 
+                  | Dropdown 
+                  span.caret
+                  ul.dropdown-menu role="menu"
+                    li
+                      a Action
+                    li
+                      a Another action
+            form.navbar-form.navbar-left.pull-right role="search"
+              .form-group
+                input.form-control placeholder="Search"
+              button.btn.btn-default.btn-search type="submit"
+                span.glyphicon.glyphicon-search 
+                | 搜 尋
+  #bodybox
+    .row
+      .content-column.col-xs-4.col-sm-3
+        .row
+          .col-xs-12.col-sm-12
+            .panel.panel-default
+              .panel-heading 推薦商品
+              .list-group
+                a.list-group-item Cras justo odio
+                a.list-group-item Cras justo odio
+                a.list-group-item Cras justo odio
+                a.list-group-item Cras justo odio
+          .col-xs-12.col-sm-12
+            .panel.panel-default
+              .panel-heading 熱門商品 
+              .list-group
+                a.list-group-item Cras justo odio
+                a.list-group-item Cras justo odio
+                a.list-group-item Cras justo odio
+                a.list-group-item Cras justo odio
+      .content-r-column.col-xs-8.col-sm-9
+        #
+          h1
+            span.glyphicon.glyphicon-collapse-down aria-hidden="true"  手機帳單急診室
+        .maintitle iWord 精算懶人包 - 保險、理財、資費快速精算懶人包
+        .row
+          .col-sm-6.col-md-6.category_box
+            .qnumber Q 1
+            .qcontent
+              h2 平均每月帳單金額
+              p 通話費、上網費、哩哩摳摳加一日，問君能有幾多錢
+              ul
+                li#l1
+                  label
+                    input type="radio" name="q1" value="0.15"
+                      span.glyphicon.glyphicon-check  100~300元
+                li#l2
+                  label
+                    input type="radio" name="q1" value="0.75"
+                      span.glyphicon.glyphicon-check  500~800元
+                li#l3
+                  label
+                    input type="radio" name="q1" value="1.5"
+                      span.glyphicon.glyphicon-check  破千元
+                li#l4
+                  label
+                    input type="radio" name="q1" value="4.5"
+                      span.glyphicon.glyphicon-check  沒有通話費
+          .col-sm-6.col-md-6.category_box
+            .qnumber Q 2
+            .qcontent
+              h2 平均每通電話的通話時間 
+              p 長話短說，無話不說，囉哩叭嗦，平均每通電話講多久？ 
+              ul
+                li#l21
+                  label
+                    input type="radio" name="q2" value="0.15"
+                      span.glyphicon.glyphicon-check  3分鐘
+                li#l22
+                  label
+                    input type="radio" name="q2" value="0.75"
+                      span.glyphicon.glyphicon-check  30分鐘
+                li#l23
+                  label
+                    input type="radio" name="q2" value="1.5"
+                      span.glyphicon.glyphicon-check  3小時
+                li#l24
+                  label
+                    input type="radio" name="q2" value="4.5"
+                      span.glyphicon.glyphicon-check  3秒結束
+          .clear
+          .col-sm-6.col-md-6.category_box
+            .qnumber Q 3
+            .qcontent
+              h2 平均每個月播出的通話量 
+              p 早中晚照三餐報平安，奪命連環摳摳摳，非急難救助絕不播打…
+              ul
+                li#l31
+                  label
+                    input type="radio" name="q3" value="0.15"
+                      span.glyphicon.glyphicon-check  30通以下
+                li#l32
+                  label
+                    input type="radio" name="q3" value="0.75"
+                      span.glyphicon.glyphicon-check  90通左右
+                li#l33
+                  label
+                    input type="radio" name="q3" value="1.5"
+                      span.glyphicon.glyphicon-check  200通輕鬆打
+                li#l34
+                  label
+                    input type="radio" name="q3" value="4.5"
+                      span.glyphicon.glyphicon-check  3通以下
+          .col-sm-6.col-md-6.category_box
+            .qnumber Q 4
+            .qcontent
+              h2 通話網內、網外比例 
+              p 播打電話對象是自家網內多、別家網外多，或者搞不清楚誰是自己人
+              ul
+                li#l41
+                  label
+                    input type="radio" name="q4" value="0.15"
+                      span.glyphicon.glyphicon-check  網內多
+                li#l42
+                  label
+                    input type="radio" name="q4" value="0.75"
+                      span.glyphicon.glyphicon-check  網外多
+                li#l43
+                  label
+                    input type="radio" name="q4" value="1.5"
+                      span.glyphicon.glyphicon-check  網內網外差不多
+                li#l44
+                  label
+                    input type="radio" name="q4" value="4.5"
+                      span.glyphicon.glyphicon-check  傻傻分不清楚
+          .clear
+          .text-center.col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-3
+            button.btn.btn-default.btn-speed.btn-block  懶人速診
+
+
 
 
 

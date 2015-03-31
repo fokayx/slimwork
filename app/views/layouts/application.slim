@@ -18,6 +18,14 @@ html
 
     == yield
 
+    footer
+      .container
+        .row
+          .col-xs-4.col-sm-4.col-md-4 iWord 精算懶人包
+          .col-xs-4.col-sm-4.col-md-4 iWord 職場知識家
+          .col-xs-4.col-sm-4.col-md-4 EzPrice 比價網
+
+
 javascript:
   $('input:radio').click(function() {
   $('input:radio[name='+$(this).attr('name')+']').parent().removeClass('active');
