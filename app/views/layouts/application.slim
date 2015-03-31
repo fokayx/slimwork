@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Slim Work
+    meta name="keywords" content="slim template"
+    = stylesheet_link_tag \
+      "application", \
+      "/css/bootstrap.min.css", \
+      "/css/normalize.css", \
+      "/css/financepage.css"
+    = javascript_include_tag \
+      "application", \
+      "http://code.jquery.com/jquery.js",\
+      "/js/bootstrap.min.js"
+
+
+  body
+
+    == yield
+
+javascript:
+  $('input:radio').click(function() {
+  $('input:radio[name='+$(this).attr('name')+']').parent().removeClass('active');
+    $(this).parent().addClass('active');
+    });addClass
+
+javascript:
+  $('#myCarousel').carousel({
+    interval: 2000
+  })
